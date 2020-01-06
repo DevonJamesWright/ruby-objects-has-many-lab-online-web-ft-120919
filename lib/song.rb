@@ -11,8 +11,6 @@ class Song
     @@all << self
   end
   def artist_name
-    binding.pry
-    if Artist.new(name)
     self.artist.name
   else 
     nil 
