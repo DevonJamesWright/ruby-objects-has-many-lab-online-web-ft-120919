@@ -6,8 +6,7 @@ class Post
     save
   end 
   def author_name
-    self.author.name
-  else 
+    unless self.author.name
     nil
     end
   end
