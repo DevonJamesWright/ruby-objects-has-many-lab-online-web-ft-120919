@@ -10,7 +10,7 @@ class Song
     @@all << self
   end
   def artist_name
-    if Author.include? (Author.name)
+    if Artist.include? (Artist.name)
     self.artist.name
   else 
     nil 
