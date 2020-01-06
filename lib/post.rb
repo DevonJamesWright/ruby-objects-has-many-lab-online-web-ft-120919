@@ -6,9 +6,10 @@ class Post
     save
   end 
   def author_name
-    unless self.author.name
+    if Author.new.include? (name)
+    self.author.name
+  else 
     nil
-    end
   end
 
   def save
