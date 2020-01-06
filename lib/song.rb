@@ -19,4 +19,8 @@ end
 
 class Nil 
 attr_accessor :name 
+def name 
+  if name 
+    nil 
+  end
 end
