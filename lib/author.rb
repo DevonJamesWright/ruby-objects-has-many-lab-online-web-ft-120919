@@ -1,6 +1,6 @@
 class Author 
   attr_accessor :title, :genre, :name
-  def initialize
+  def initialize(name = "Author Name")
     @name = name
   end
   
