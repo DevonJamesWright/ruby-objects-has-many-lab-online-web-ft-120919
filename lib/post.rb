@@ -1,12 +1,15 @@
 class Post 
-  attr_accessor :author, :genre, :title
+  attr_accessor :author, :genre, :title, :name
     @@all = []
   def initialize (title)
     @title = title 
     save
   end 
   def author_name
+    if author.include? (name)
     self.author.name
+  else 
+    nil
     
   end
 
