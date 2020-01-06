@@ -6,8 +6,6 @@ class Post
     save
   end 
   def author_name
-    @name = name
-    if author.include? (name)
     self.author.name
   else 
     nil
