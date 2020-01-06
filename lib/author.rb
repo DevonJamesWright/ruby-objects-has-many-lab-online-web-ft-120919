@@ -1,7 +1,7 @@
 class Author 
-  attr_accessor :name, :genre 
-  def initialize(name)
-    @name = name
+  attr_accessor :title, :genre 
+  def initialize(title)
+    @title = title
   end
   
   def posts 
@@ -12,8 +12,8 @@ class Author
     postie.author = self
   end
   
-  def add_post_by_name(name)
-    postie = Post.new(name)
+  def add_post_by_title(title)
+    postie = Post.new(title)
     add_post(postie)
   end 
   def post_count
