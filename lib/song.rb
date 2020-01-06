@@ -16,3 +16,7 @@ class Song
    @@all 
   end 
 end
+
+class Nil 
+attr_accessor :name 
+end
