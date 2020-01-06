@@ -10,7 +10,7 @@ class Song
     @@all << self
   end
   def artist_name
-    if Artist.new(name)
+    if Artist.new
     self.artist.name
   else 
     nil 
