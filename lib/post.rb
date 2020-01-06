@@ -5,7 +5,11 @@ class Post
     @title = title 
     save
   end 
-  
+  def author_name
+    self.author.name
+  end
+    
+  end
 
   def save
     @@all << self
