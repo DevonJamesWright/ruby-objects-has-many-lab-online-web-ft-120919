@@ -5,7 +5,7 @@ class Post
     @title = title 
     save
   end 
-  def author_name
+  def author_name (name)
     if Author.new.include? (name)
     self.author.name
   else 
